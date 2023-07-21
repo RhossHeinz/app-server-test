@@ -1,0 +1,12 @@
+diff --git a/node_modules/googleapis/build/src/apis/playintegrity/v1.js b/node_modules/googleapis/build/src/apis/playintegrity/v1.js
+index 60633d5..9cdb57f 100644
+--- a/node_modules/googleapis/build/src/apis/playintegrity/v1.js
++++ b/node_modules/googleapis/build/src/apis/playintegrity/v1.js
+@@ -39,6 +39,7 @@ var playintegrity_v1;
+                 google,
+             };
+             this.v1 = new Resource$V1(this.context);
++            this.decodeIntegrityToken = this.v1.decodeIntegrityToken;
+         }
+     }
+     playintegrity_v1.Playintegrity = Playintegrity;

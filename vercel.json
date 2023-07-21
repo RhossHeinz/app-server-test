@@ -1,0 +1,20 @@
+{
+    "github": {
+        "silent": true
+    },
+
+    "redirects": [
+        { 
+          "source": "/",
+          "destination": "https://github.com/1nikolas/play-integrity-checker-server/", 
+          "permanent": false
+        }
+      ],
+
+      "rewrites": [
+        {
+          "source": "/(.*)",
+          "destination": "/404.json"
+        }
+      ]
+}
