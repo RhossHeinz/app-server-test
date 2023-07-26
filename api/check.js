@@ -2,9 +2,9 @@ import { google } from "googleapis";
 const playintegrity = google.playintegrity('v1');
 
 
-const packageName = process.env.PACKAGE_NAME
-const clientEmail = process.env.GOOGLE_CLIENT_EMAIL
-const privateKey = process.env.GOOGLE_PRIVATE_KEY
+const packageName = process.env.PACKAGE_NAME;
+const clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
+const privateKey = process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n');
 
 
 async function getTokenResponse(token) {
